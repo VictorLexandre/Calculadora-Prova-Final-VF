@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora (VF)</title>
+    <link rel="stylesheet" href="css/bootstrapCss/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/bootstrapJs/bootstrap.js"></script>
+</head>
+<body style="background-image: url('img/fundo.jpg'); background-repeat: repeat; background-size: cover; position: fixed">
+<div class="container-fluid text-center resumo">
+    <div class="row container-fluid">
+        <div style="border-right: 1px solid white" class="col container-fluid">
+            <hr>
+            <h3 style="font-family: 'Times New Roman'"><b><i>Valor Futuro Poupado (VF)</i></b></h3>
+            <hr>
+            <p>Poupar dinheiro não é um hábito do consumidor brasileiro, nem mesmo entre aqueles que têm renda maior. é o que diz o Indicador Mensal de Reserva Financeira.
+                Os dados mostram que, em cada dez brasileiros com renda superior a cinco salários mínimos (R$ 4.690), apenas três (30%) conseguiram encerrar o último mês de novembro com sobra de dinheiro.</p>
+            <p>“O consumidor deve ter em mente que um orçamento controlado pode fazer toda a diferença. O ideal não é poupar somente o que sobra no fim do mês,
+                mas sempre reservar uma quantia fixa”, afirma a economista-chefe do SPC Brasil, Marcela Kawauti.</p>
+            <hr>
+            <h4 style="font-family: 'Times New Roman'"><b><i>Problema de Negócio :</i></b></h4>
+            <p>Quanto dinheiro os brasileiros poderiam juntar se tivessem o hábito de poupar?</p>
+            <hr>
+        </div>
+        <div style="border-left: 1px solid white" class="col container-fluid">
+            <hr>
+            <h3 style="font-family: 'Times New Roman'"><b><i>Calculadora:</i></b></h3>
+            <hr>
+            <div class="row ins">
+                <input class="form-control in" type="number" id="C" name="C" placeholder="Valor Mensal a ser aplicado: " required>
+                <input style="margin-top: 0.5cm" class="form-control in" id="J" name="J" type="number" placeholder="Taxa de juros mensal em (%): " required>
+                <input style="margin-top: 0.5cm" class="form-control in" id="N" name="N" type="number" placeholder="Número de parcelas Mensais: " required>
+            </div>
+            <hr>
+            <center><button class="btn btn-outline-success" id="calcular"><b>Calcular</b></button></center>
+            <hr>
+            <div id="resultado">
+                <p>Resultado:</p>
+            </div>
+        </div>
+        <script src="js/calculadora.js"></script>
+    </div>
+</body>
+</html>
